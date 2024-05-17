@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Serie favorita</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <style>
+            body {
+                font-family:Georgia, Times;
+                margin: 20px;
+            }
+            h1{
+                color: rgb(3, 77, 35);
+                font-family:  'Courier New', Courier, monospace;
+                text-align: center;
+            }
+            h2{
+                color: rgb(14, 29, 165);
+                font-family: system-ui, sans-serif;
+            }
+            p{
+                text-align: center;
+                font-family: Verdana;
+                color: rgb(63, 63, 66);
+            }
+            nav {
+                background-color: hwb(228 6% 47% / 0.914);
+                text-align: center;
+                padding: 10px 0;
+                font-family: Verdana,Tahoma, sans-serif;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+                padding: 5px 10px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            nav ul li a:hover {
+                background-color: rgb(14, 29, 165);
+            }
+            .video-container {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            .image{
+                display: flex;
+                justify-content: center;
+                margin: 20px;
+            }
+            .image img{
+                margin: 10px;
+                width: 300px; 
+                height: auto;
+                transition: transform 0.3s;
+            }
+            .image img:hover {
+                transform: scale(1.5); 
+            }
+            .form-container {
+                text-align: center;
+                background-color: rgb(255, 255, 255);
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgb(14, 62, 112);
+                max-width: 400px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            .form-container input[type="text"],
+            .form-container input[type="email"],
+            .form-container input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #000000;
+                border-radius: 5px;
+                box-sizing: border-box;
+                
+            }
+            .form-container label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            .form-container button[type="submit"] {
+                background-color: rgb(3, 77, 35);
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+        .form-container button[type="submit"]:hover {
+            background-color: rgb(2, 61, 28);
+            }
+               
+    </style>
+    </head>
+    <nav>
+        <div data-aos="fade-up">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contacto">Formulario</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    
+    <body>
+
+        <script>
+            AOS.init();
+          </script>
+            
+        <section id="inicio">
+        <header>
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+        
+            <h1>Final Space</h1>
+            <p>Bueno a mi me gustan bastantes las cosas relacionadas al spacio y la ciencia ficcion en general, y con esta serie me gusta
+                como manejan las personalidades de los personajes, su historia, y como manejan el humor y como avanza la historia. 
+                Bueno otra cosa que me gusta son las voces de los personajes. En lo personal la primera temporada es la mejor de todas 
+                aunque es una lastima, que fue cancelado :c   
+            </p>
+        </div>
+        </header>
+        </section>
+      
+
+        <section id="galeria">
+        <main>
+            <section>
+                <div data-aos="zoom-out">
+                <h1>Galeria</h1>
+                <div class="image">
+                    <img src="galeria1.jpg" style="width: 300px; height: auto;">
+                    <img src="galeria2.jpg" style="width: 300px; height: auto;">
+                    <img src="galeria3.jpg" style="width: 300px; height: auto;">
+                    <img src="galeria4.jpg" style="width: 300px; height: auto;">
+                </div>
+                </div>    
+            </section>
+        </section>
+
+        <section id="video">
+            <section>
+                <div data-aos="flip-right">
+                <h1> Video </h1> 
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QQp-NkvFkvE?si=U7Ylsu8zEEB4Iq03"
+                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                 encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                 allowfullscreen> </iframe> </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="contacto">
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+            <section class="form-container">
+                <h2>Formulario</h2>
+                <form>
+                    <div>
+                        <label for="nombre">Nombre: </label> 
+                        <input type="text" id="nombre" name="nombre"  required>
+                    </div>
+                    <div>
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo"  required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+            </div>
+        </section>
+        </main>
+        
+    </body>
+
+</html>
