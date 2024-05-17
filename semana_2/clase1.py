@@ -1,13 +1,3 @@
-def funcion_duble(arr):
-    n = len(arr) 
-
-    for i in range(n): 
-        for j in range(n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-
-
-
 def funcion_sort(arr, size):
     for d in range(size):
         min_indi = d  
@@ -20,12 +10,15 @@ def funcion_sort(arr, size):
 
 
 def funcion_ordenamiento(arr):
+    size = len(arr)
+    funcion_sort(arr, size)
 
-
-    
 arr = []
 
+print("Ingrese los 20 números:")
 for datos in range(20):
     numeros = int(input())
     arr.append(numeros)
-print("Ingrese los 20 numeros: " )
+
+funcion_ordenamiento(arr)
+print("Arreglo ordenado:", arr)
