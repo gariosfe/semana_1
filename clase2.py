@@ -37,4 +37,3 @@ if __name__ == "__main__":
     print(f"Tiempo de ejecución: {elapsed_time:.6f} segundos")
 
 #----------------------------------------------------------------------------
-
