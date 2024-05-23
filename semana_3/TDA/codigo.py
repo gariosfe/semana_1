@@ -55,3 +55,4 @@ if __name__ == "__main__":
     reversed_text = reverse_text(text)
     print(f"Texto original: {text}")
     print(f"Texto invertido: {reversed_text}")
+    
