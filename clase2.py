@@ -36,4 +36,4 @@ if __name__ == "__main__":
     print(f"Suma: {suma}")
     print(f"Tiempo de ejecución: {elapsed_time:.6f} segundos")
 
-#----------------------------------------------------------------------------
+
